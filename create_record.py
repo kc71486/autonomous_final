@@ -11,7 +11,7 @@ from psutil import cpu_count
 from utils import *
 from object_detection.utils import dataset_util, label_map_util
 import os
-label_map = label_map_util.load_labelmap('/tf/code/label_map.pbtxt')
+label_map = label_map_util.load_labelmap('./label_map.pbtxt')
 label_map_dict = label_map_util.get_label_map_dict(label_map)
 
 t2idict = {y:x for x,y in label_map_dict.items()}
